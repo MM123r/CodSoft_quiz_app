@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/core/colors.dart';
 import 'package:quiz_app/core/navigation.dart';
-import 'package:quiz_app/feature/home_screen.dart';
+import 'package:quiz_app/feature/question_category_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -45,7 +45,7 @@ class SplashScreen extends StatelessWidget {
             alignment: Alignment.center,
             child: GestureDetector(
               onTap: () {
-                pushTO(context, const HomeScreen());
+                pushTO(context, const CategoryScreen());
               },
               child: Container(
                 margin: const EdgeInsets.only(
